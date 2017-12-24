@@ -10,6 +10,10 @@ Todo List
 * Convert to a service listener
 * Redesign the user interface
 
+In-progress
+-----------
+* example (assign to iRaySpace)
+
 Achievements
 ------------
 * Able to serve
