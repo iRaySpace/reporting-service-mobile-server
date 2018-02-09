@@ -44,7 +44,7 @@ import java.util.Map;
 
                 // Extraction of information
                 // -------------------------
-                // [0] Code, [1] Latitude, [2] Longitude, [3] MainCategory, [4] Subcategory, [5] Accuracy, [6] Time
+                // [0] Code, [1] Latitude, [2] Longitude, [3] MainCategory, [4] Subcategory, [5] Accuracy, [6] Time, [7] Provider
                 String[] info = messageText.split(",");
 
                 // If correct code
@@ -68,6 +68,10 @@ import java.util.Map;
                     // Time taken
                     TextView timeTaken = (TextView) findViewById(R.id.TimeTakenText);
                     timeTaken.setText(info[6]);
+
+                    // Location Provider
+                    TextView locationProvider = (TextView) findViewById(R.id.LocationProviderText);
+                    locationProvider.setText(info[7]);
 
                     // Accuracy
                     TextView accuracy = (TextView) findViewById(R.id.AccuracyText);
